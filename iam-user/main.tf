@@ -24,7 +24,10 @@ data "aws_iam_policy_document" "this" {
      "eks:DescribeCluster",
      "eks:ListClusters",
      "eks:DescribeAddonVersions",
-     "eks:ListIdentityProviderConfigs"
+     "eks:ListIdentityProviderConfigs",
+     "s3:CreateBucket",
+     "s3:listBucket",
+     "s3:getObject"
 ]
     resources = ["*"]
   }
