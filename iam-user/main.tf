@@ -27,7 +27,8 @@ data "aws_iam_policy_document" "this" {
      "eks:ListIdentityProviderConfigs",
      "s3:CreateBucket",
      "s3:listBucket",
-     "s3:getObject"
+     "s3:GetObject",
+     "s3:PutACL"
 ]
     resources = ["*"]
   }
